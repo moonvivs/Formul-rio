@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <link rel="stylesheet" href="produto.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Cadastro do Produto</legend>
+            <label for="nname">Produto:</label>
+            <br>
+            <input type="text" id="nname" name="tname" placeholder="Digite o nome do Produto">
+        
+            <br>
+            <label for="data">Data Cadastro:</label>
+            <br>
+            <input type="date" id="data" name="ddate">
+            <br>
+    
+            <label for=" isexo">Categoria:</label>
+            <select name="ssexo" id="isexo">
+                <option value="L">Livros</option>
+                <option value="C" selected>Cadernos</option>
+            </select>
+            <br>
+            <label for="number">Peso:</label>
+            <br>
+            <input type="number" id="number" name="nnumber">
+            <br>
+            <label>Situação:</label>
+    
+            <input type="radio" name="rtipo" id="itpusuario" value="U">
+            <label for="itpusuario">O Novo</label>
+            <input type="radio" name="rtipo" id="itpadimin" value="A">
+            <label for="itpadimin">O Usado</label>
+            <br>
+            <label for="ivoce">Descrição:</label>
+            <br>
+            <textarea name="txtdescription" id="idescription" cols="30" rows="10"></textarea>
+            <br>
+    
+            <label for="vol">Avaliação (5-10):</label>
+            <input type="range" i="vol" min="0" max="50">
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>
